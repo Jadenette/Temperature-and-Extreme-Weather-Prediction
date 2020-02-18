@@ -1,0 +1,26 @@
+1. Data cleaning & re-organization & normalization
+	a. seperate year, month, and day into different columns
+		possible approaches:  https://www.geeksforgeeks.org/python-working-with-date-and-time-using-pandas/
+					(using timestamp (or whatever it's called I already forgot) as datatype)
+					https://www.geeksforgeeks.org/python-pandas-split-strings-into-two-list-columns-using-str-split/
+					(using string)
+	b. add a new column indicate the season
+		possible approches: based on the column of month based on the st step
+	c. add a new column indicate the index
+		e.g. 1950-01-01 to 2019-01-01 corresponds to 1 to (count)
+
+	d. consider deleting the mean temp column since there are too many missing values...
+
+2. Basic ststistics
+	a. for min temp
+		find the mean of min temp for every year and then graph it? / 
+		find the mean of min temp for every season in every year and then graph it? (4 graphs) / 
+		apply one-way Anova to compare the means among all the years
+	b. for max temp 
+		same
+
+3. Linear regression	
+	Apply regression for every month? (is it linear?)
+
+4. Machine learning
+	I'm still searching for periodic regression model :(
